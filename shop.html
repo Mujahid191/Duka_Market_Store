@@ -1,0 +1,1783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/animation/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css" integrity="sha512-uHuCigcmv3ByTqBQQEwngXWk7E/NaPYP+CFglpkXPnRQbSubJmEENgh+itRDYbWV0fUZmUz7fD/+JDdeQFD5+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <title>Duka E-commence Store</title>
+</head>
+<body onclick="toggleMenu()">
+    <!------------- header Section --------------->
+    <header class="header">
+        <div class="top_header d-lg-block d-none">
+            <div class="container">
+                <div class="row top_bar">
+                    <div class="col-md-7">
+                        <div class="row">
+                            <!-- <div class="col-auto">
+                                <div class="language_option">
+                                    <span><b>Language:</b></span>
+                                    <select name="language" id="language">
+                                        <option value="English">English</option>
+                                        <option value="French">French</option>
+                                        <option value="Espanol">Espanol</option>
+                                    </select>
+                                    <span class="devider">|</span>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="currency_option">
+                                    <span><b>Currency:</b></span>
+                                    <select name="currency" id="currency">
+                                        <option value="USD">USD</option>
+                                        <option value="EUR">EUR</option>
+                                        <option value="INR">INR</option>
+                                    </select>
+                                    <span class="devider">|</span>
+                                </div>
+                            </div> -->
+                            <div class="col-auto">
+                                <p>need help? <span>+001 123 456 789</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 text-md-end text-center">
+                        <nav>
+                            <ul>
+                                <a href="about.html">About <span class="devider">|</span></a>
+                                <a href="checkout.html">order tracking <span class="devider">|</span></a>
+                                <a href="about.html">contact us <span class="devider">|</span></a>
+                                <a href="faq.html">FAQs</a>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mid_header">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md-3 col-5">
+                        <div class="site_logo">
+                            <a href="index.html"><img src="assets/img/logo/logo1.svg" alt="site_logo" class="img-fluid"></a>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-5 col-lg-5 d-lg-block d-none">
+                        <form action="#">
+                            <div class="form_area form-control p-0">
+                                <select name="categories" id="categories" class="ps-2">
+                                    <option value="Best Seller Products">All Categories</option>
+                                    <option value="Best Seller Products">Best Seller Products</option>
+                                    <option value="Top 10 Offers">Top 10 Offers</option>
+                                    <option value="New Arrivals">New Arrivals</option>
+                                    <option value="Phones &amp; Tablets">Phones &amp; Tablets</option>
+                                    <option value="Electronics &amp; Digital">Electronics &amp; Digital</option>
+                                    <option value="Fashion &amp; Clothings">Fashion &amp; Clothings</option>
+                                    <option value="Jewelry &amp; Watches">Jewelry &amp; Watches</option>
+                                    <option value="Health &amp; Beauty">Health &amp; Beauty</option>
+                                    <option value="Sound &amp; Speakers">Sound &amp; Speakers</option>
+                                    <option value="TV &amp; Audio">TV &amp; Audio</option>
+                                    <option value="Computers">Computers</option>
+                                </select>
+                                <i class="fa-solid fa-angle-down me-2"></i>
+                                <input type="search" name="search_box" id="search_box" placeholder="I'm shopping for..." class="search_box form-control">
+                                <button class="btn btn-warning search_btn p-3"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-auto d-lg-block d-none">
+                        <div class="header_icon">
+                            <div class="user me-lg-4">
+                                <a href="login-register.html"><i class="fa-solid fa-user me-1"></i> My Account</a>
+                            </div>
+                            <div class="wishlist me-lg-4">
+                                <a href="wishlist.html"><i class="fa-regular fa-heart me-1"></i> My Wishlist</a>
+                            </div>
+                            <div class="wishlist">
+                                <a href="cart.html"><i class="fa-solid fa-cart-shopping me-1"></i> My Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto d-lg-none d-flex align-items-center">
+                        <div class="wishlist me-4">
+                            <a href="cart.html"><i class="fa-solid fa-cart-shopping me-1"></i> My Cart</a>
+                        </div>
+                        <div class="toggle-icon" onclick="toggleMenu()" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="last_header d-lg-block d-none">
+            <div class="container" style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 1.5rem;">
+                <div class="row nav_area">
+                    <div class="col-auto">
+                        <p data-bs-toggle="collapse" data-bs-target="#sub_menu_show" class="shop_text">
+                            <b class="text-uppercase">shop by department</b>
+                            <i class="fa-solid fa-angle-down ms-3"></i>
+                        </p>
+                        <ul class="main_ul collapse" id="sub_menu_show">
+                            <li data-bs-toggle="collapse" data-bs-target="#shop_category"><a href="#">All Categories <i class="fa-solid fa-angle-right"></i></a>
+                                <ul class="sub_category collapse" id="shop_category" data-bs-parent="#sub_menu_show">
+                                    <li><a href="shop.html">shop left sidebar</a></li>
+                                    <li><a href="shop.html">shop right sidebar</a></li>
+                                    <li><a href="product-detail.html">products details</a></li>
+                                    <li><a href="shop.html">phone and tablets</a></li>
+                                </ul>
+                            </li>
+                            <li data-bs-toggle="collapse" data-bs-target="#phone_electronics"><a href="#">phone and electronic <i class="fa-solid fa-angle-right"></i></a>
+                                <ul class="sub_category collapse" id="phone_electronics" data-bs-parent="#sub_menu_show">
+                                    <li><a href="shop.html">phone and electronics</a></li>
+                                    <li><a href="product-detail.html">iphone</a></li>
+                                    <li><a href="shop.html">android</a></li>
+                                    <li><a href="shop.html">tablets</a></li>
+                                    <li><a href="shop.html">smart watches</a></li>
+                                </ul>
+                            </li>
+                            <li data-bs-toggle="collapse" data-bs-target="#best_seller"><a href="#">best Seller products <i class="fa-solid fa-angle-right"></i></a>
+                                <ul class="sub_category collapse" id="best_seller" data-bs-parent="#sub_menu_show">
+                                    <li><a href="shop.html">ios watches</a></li>
+                                    <li><a href="shop.html">android watches</a></li>
+                                    <li><a href="shop.html">macbook pro</a></li>
+                                    <li><a href="shop.html">Apple Imac</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">top 10 offers</a></li>
+                            <li data-bs-toggle="collapse" data-bs-target="#new_arrival"><a href="#">new Arrivals <i class="fa-solid fa-angle-right"></i></a>
+                                <ul class="sub_category collapse" id="new_arrival" data-bs-parent="#sub_menu_show">
+                                    <li><a href="shop.html">home appliances</a></li>
+                                    <li><a href="shop.html">office equipment</a></li>
+                                    <li><a href="shop.html">technology</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="shop.html">TV & audio</a></li>
+                            <li><a href="shop.html">electronics & digital</a></li>
+                            <li><a href="shop.html">Fashion & clothings</a></li>
+                            <li><a href="shop.html">jewelry & watches</a></li>
+                            <li><a href="shop.html">health & beauty</a></li>
+                        </ul>
+                    </div>
+                    <div class="col mx-auto">
+                        <nav>
+                            <ul class="navigation">
+                                <li class="nav-item"><a href="index.html" class="nav-link text-uppercase">home</a></li>
+                                <li data-bs-toggle="collapse" data-bs-target="#shop_pages" class="nav-item pages">
+                                    <a class="nav-link text-uppercase">pages <i class="fa-solid fa-angle-down"></i></a>
+                                    <div class="collapse" id="shop_pages">
+                                        <ul class="pages_heading">
+                                            <li><a href="#"><b class="text-uppercase">shop layout</b></a>
+                                                <ul class="shop_sub_menu">
+                                                    <li><a href="shop.html">list view</a></li>
+                                                    <li><a href="shop.html">small Products</a></li>
+                                                    <li><a href="shop.html">large products</a></li>
+                                                    <li><a href="shop.html">shop left sidebar</a></li>
+                                                    <li><a href="shop.html">shop right sidebar</a></li>
+                                                    <li><a href="shop.html">product details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#"><b class="text-uppercase">product layout</b></a>
+                                                <ul class="shop_sub_menu">
+                                                    <li><a href="shop.html">description Sticky</a></li>
+                                                    <li><a href="shop.html">product carousel</a></li>
+                                                    <li><a href="shop.html">gallery Modern</a></li>
+                                                    <li><a href="shop.html">Thumbnail left</a></li>
+                                                    <li><a href="shop.html">Thumbnail right</a></li>
+                                                    <li><a href="shop.html">Thumbnail bottom</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#"><b class="text-uppercase">basketball</b></a>
+                                                <ul class="shop_sub_menu">
+                                                    <li><a href="shop.html">East Hampton Fleece</a></li>
+                                                    <li><a href="shop.html">Faxon Canvas Low</a></li>
+                                                    <li><a href="shop.html">Habitasse Dictumst</a></li>
+                                                    <li><a href="shop.html">Kaoreet Lobortis</a></li>
+                                                    <li><a href="shop.html">NikeCourt Zoom</a></li>
+                                                    <li><a href="shop.html">NikeCourts Air Zoom</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#"><b class="text-uppercase">other pages</b></a>
+                                                <ul class="shop_sub_menu">
+                                                <li><a href="faq.html">FAQs pages</a></li>
+                                                <li><a href="cart.html">Cart</a></li>
+                                                <li><a href="wishlist.html">Wishlist</a></li>
+                                                <li><a href="checkout.html">Checkout</a></li>
+                                                <li><a href="contact.html">Contact Us</a></li>
+                                                <li><a href="404.html">404 Error</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="text-end"><img src="assets/img/bg/menu-item.jpg" alt="menu-item" class="img-fluid w-75"></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a href="shop.html" class="nav-link text-uppercase">shop</a></li>
+                                <li class="nav-item"><a href="blog.html" class="nav-link text-uppercase">blog</a></li>
+                                <li class="nav-item"><a href="about.html" class="nav-link text-uppercase">about</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-auto">
+                        <p>Spend $120 more and get free shipping!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!------------- header Section --------------->
+    <main>
+    <!------------- breadcrumb Section --------------->
+    <section class="breadcrumb_section section">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Shop</li>
+                      </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------- shop Section --------------->
+    <section class="shop_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-md-4  sidebar mobile_sidebar">
+                    <div class="category_area">
+                        <h3>Product categories</h3>
+                        <ul>
+                            <li> 
+                                <input type="checkbox" name="" id="checkbox1" class="brand_checkbox">
+                                <label for="checkbox1">clothing & apparel (12)</label>
+                            </li>
+                            <li> 
+                                <input type="checkbox" name="" id="checkbox2" class="brand_checkbox">
+                                <label for="checkbox2">Consumer Electrics (60)</label>
+                            </li>
+                            <li> 
+                                <input type="checkbox" name="" id="checkbox3" class="brand_checkbox">
+                                <label for="checkbox3">Computers & Technologies (41)</label>
+                            </li>
+                            <li> 
+                                <input type="checkbox" name="" id="checkbox4" class="brand_checkbox">
+                                <label for="checkbox4">Phones & Accessories (28)</label>
+                            </li>
+                            <li> 
+                                <input type="checkbox" name="" id="checkbox5" class="brand_checkbox">
+                                <label for="checkbox5">Babies & Moms (21)</label>
+                            </li>
+                            <li> 
+                                <input type="checkbox" name="" id="checkbox6" class="brand_checkbox">
+                                <label for="checkbox6">Books & Office (62)</label>
+                            </li>
+                            <li> 
+                                <input type="checkbox" name="" id="checkbox7" class="brand_checkbox">
+                                <label for="checkbox7">Sport & Outdoor (22)</label>
+                            </li>
+                            <li> 
+                                <input type="checkbox" name="" id="checkbox8" class="brand_checkbox">
+                                <label for="checkbox8">clothing & apparel (3)</label>
+                            </li>
+                            <li> 
+                                <input type="checkbox" name="" id="checkbox9" class="brand_checkbox">
+                                <label for="checkbox9">Chairs & Stools (20)</label>
+                            </li>
+                            <li> 
+                                <input type="checkbox" name="" id="checkbox10" class="brand_checkbox">
+                                <label for="checkbox10">Furniture & Accessories (06)</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="category_area mt-5">
+                        <h3>Price</h3>
+                        <div class="price_area">
+                            <div class="row">
+                                <h2>price</h2>
+                                <div class="price_text">
+                                    <div class="price_inputs">
+                                        <div class="price_minimum">
+                                        <label for="price">Minimum:$0</label> <br>
+                                        <input type="number" name="price" id="price" value="0" class="min_range">
+                                        </div>
+                                        <div class="price_maximum">
+                                        <label for="price">Maximum:$1200</label> <br>
+                                        <input type="number" name="price" id="price" value="1200" class="max_range">
+                                        </div>
+                                    </div>
+                                    <div class="slider_area">
+                                        <div class="progress_bar"></div>
+                                        <input type="range" name="" id="min_icon" class="range_left" value="0" max="1200">
+                                        <input type="range" name="" id="max_icon" class="range_right" value="1200" max="1200">
+                                    </div>
+                                    <button class="btn btn-warning filter_btn">Filter</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category_area mt-5">
+                        <h3>choose rating</h3>
+                        <ul>
+                            <li> 
+                                <input type="checkbox" name="" id="start1" class="brand_checkbox">
+                                <label for="start1">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    (54)
+                                </label>
+                            </li>
+                            <li> 
+                                <input type="checkbox" name="" id="start2" class="brand_checkbox">
+                                <label for="start2">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    (40)
+                                </label>
+                            </li>
+                            <li> 
+                                <input type="checkbox" name="" id="star3" class="brand_checkbox">
+                                <label for="star3">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    (22)
+                                </label>
+                            </li>
+                            <li> 
+                                <input type="checkbox" name="" id="star4" class="brand_checkbox">
+                                <label for="star4">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    (28)
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="category_area mt-5">
+                        <h3>choose size</h3>
+                        <ul>
+                            <li> 
+                                <input type="checkbox" name="" id="size1" class="brand_checkbox">
+                                <label for="size1">s (12)</label>
+                            </li>
+                            <li> 
+                                <input type="checkbox" name="" id="size2" class="brand_checkbox">
+                                <label for="size2">M (60)</label>
+                            </li>
+                            <li> 
+                                <input type="checkbox" name="" id="size3" class="brand_checkbox">
+                                <label for="size3">L (41)</label>
+                            </li>
+                            <li> 
+                                <input type="checkbox" name="" id="size6" class="brand_checkbox">
+                                <label for="size6">XL (32)</label>
+                            </li>
+                            <li> 
+                                <input type="checkbox" name="" id="size4" class="brand_checkbox">
+                                <label for="size4">2XL (22)</label>
+                            </li>
+                            <li> 
+                                <input type="checkbox" name="" id="size5" class="brand_checkbox">
+                                <label for="size5">3XL (15)</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="category_area mt-5">
+                        <h3>choose brand</h3>
+                        <ul>
+                            <li> 
+                                <input type="checkbox" name="" id="brand1" class="brand_checkbox">
+                                <label for="brand1">herschel (12)</label>
+                            </li>
+                            <li> 
+                                <input type="checkbox" name="" id="brand2" class="brand_checkbox">
+                                <label for="brand2">Cuckoo (20)</label>
+                            </li>
+                            <li> 
+                                <input type="checkbox" name="" id="brand3" class="brand_checkbox">
+                                <label for="brand3">Patagonia (11)</label>
+                            </li>
+                            <li> 
+                                <input type="checkbox" name="" id="brand4" class="brand_checkbox">
+                                <label for="brand4">SteelSeries (19)</label>
+                            </li>
+                            <li> 
+                                <input type="checkbox" name="" id="brand5" class="brand_checkbox">
+                                <label for="brand5">Lodge (14)</label>
+                            </li>
+                            <li> 
+                                <input type="checkbox" name="" id="brand6" class="brand_checkbox">
+                                <label for="brand6">Everlane (27)</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="category_area mt-5">
+                        <h3>special offer</h3>
+                        <ul>
+                            <li class="special_offer"> 
+                                <a href="#"><img src="assets/img/product/sm-1.jpg" alt="bag_img" class="img-fluid side_img"></a>
+                                <div class="side_text">
+                                    <h4><a href="#">Classic Leather Backpack Day pack 2022</a></h4>
+                                    <b>$300.00</b>
+                                </div>
+                            </li>
+                            <li class="special_offer"> 
+                                <a href="#"><img src="assets/img/product/sm-2.jpg" alt="bag_img" class="img-fluid side_img"></a>
+                                <div class="side_text">
+                                    <h4><a href="#">Samsung Galaxy A12, 32GB, Black - (Locked)</a></h4>
+                                    <b>$150.00</b>
+                                </div>
+                            </li>
+                            <li class="special_offer"> 
+                                <a href="#"><img src="assets/img/product/sm-3.jpg" alt="bag_img" class="img-fluid side_img"></a>
+                                <div class="side_text">
+                                    <h4><a href="#">Coffee Maker AH240a Full Function</a></h4>
+                                    <b>$270.00</b>
+                                </div>
+                            </li>
+                            <li class="special_offer"> 
+                                <a href="#"><img src="assets/img/product/sm-4.jpg" alt="bag_img" class="img-fluid side_img"></a>
+                                <div class="side_text">
+                                    <h4><a href="#">Imported Wooden Felt Cushion Chair</a></h4>
+                                    <b>$120.00</b>
+                                </div>
+                            </li>
+                            <li class="special_offer"> 
+                                <a href="#"><img src="assets/img/product/sm-5.jpg" alt="bag_img" class="img-fluid side_img"></a>
+                                <div class="side_text">
+                                    <h4><a href="#">Sun house Decorative Lights - Imported</a></h4>
+                                    <b>$110.00</b>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-md-8 col-12 product_area">
+                    <div class="product_top_img">
+                        <img src="assets/img/banner/sl-banner.jpg" alt="mobile_banner" class="img-fluid p_banner">
+                        <img src="assets/img/banner/sl-banner-sm.png" alt="banner" class="img-fluid banner2">
+                        <div class="p_banner_text">
+                            <p>Hurry Up! <br> Free Shipping All Order Over $99</p>
+                            <button class="btn btn-warning banner_btn">discover now</button>
+                        </div>
+                    </div>
+                    <div class="p-2 shop_products">
+                        <div class="row shop_header align-items-center">
+                            <div class="col-auto">
+                                <div class="header_icon">
+                                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                        <li class="nav-item filter_btn">
+                                            <button class="nav-link"><i class="fa-solid fa-filter"></i></button>
+                                          </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-grip"></i></button>
+                                          </li>
+                                          <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-list"></i></button>
+                                          </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-auto header_text">
+                                <p>Showing 1-20 of 29 result</p>
+                            </div>
+                            <div class="col-auto header_options ms-auto d-flex align-items-center">
+                                <div class="no_option me-4">
+                                    <div class="nice-select" tabindex="0">
+                                        <span class="current">10</span>
+                                        <ul class="list">
+                                            <li data-value="10" data-display="Select" class="option selected">10</li>
+                                            <li data-value="20" class="option px-4 py-0">20</li>
+                                            <li data-value="30" class="option px-4 py-0">30</li>
+                                            <li data-value="40" class="option px-4 py-0">40</li>
+                                            <li data-value="50" class="option px-4 py-0">50</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="sort_option">
+                                    <div class="nice-select" tabindex="0">
+                                        <span class="current">Latest</span>
+                                        <ul class="list">
+                                            <li data-value="Latest" data-display="Select" class="option selected">Latest</li>
+                                            <li data-value="new" class="option px-4 py-0">new</li>
+                                            <li data-value="up coming" class="option px-4 py-0">up coming</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col p-0">
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                        <div class="row shop_products_area">
+                                            <div class="col-xl-3 col-lg-4 col-6 p-0 product_item" data-aos="flip-left">
+                                                <div class="product">
+                                                    <div class="product_img">
+                                                        <a href="#"><img src="assets/img/product/tp-7.jpg" alt="product_slider" class="p_img"></a>
+                                                        <div class="product_icon">
+                                                            <i data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="fa-solid fa-eye" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick Model" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-solid fa-cart-shopping" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="custom-tooltip"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product_details">
+                                                        <h5><a href="">OPPO R11s 64GB Dual 20MP Cameras</a></h5>
+                                                        <div class="stars">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <span>review (1)</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <b>$150</b>
+                                                        </div>
+                                                        <div class="buttons">
+                                                            <button class="btn btn-warning">Add to cart</button>
+                                                            <button class="btn btn-outline-warning mt-2">Quick view</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6 p-0 product_item" data-aos="flip-left">
+                                                <div class="product">
+                                                    <div class="product_img">
+                                                        <a href="#"><img src="assets/img/product/tp-2.jpg" alt="product_slider" class="p_img"></a>
+                                                        <div class="product_icon">
+                                                            <i data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="fa-solid fa-eye" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick Model" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-solid fa-cart-shopping" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="custom-tooltip"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product_details">
+                                                        <h5><a href="">Men Size Yellow Basketball Jerseys</a></h5>
+                                                        <div class="stars">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <span>review (1)</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <b>$80</b>
+                                                        </div>
+                                                        <div class="buttons">
+                                                            <button class="btn btn-warning">Add to cart</button>
+                                                            <button class="btn btn-outline-warning mt-2">Quick view</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6 p-0 product_item" data-aos="flip-left">
+                                                <div class="product">
+                                                    <div class="product_img">
+                                                        <a href="#"><img src="assets/img/product/tp-3.jpg" alt="product_slider" class="p_img"></a>
+                                                        <div class="product_icon">
+                                                            <i data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="fa-solid fa-eye" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick Model" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-solid fa-cart-shopping" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="custom-tooltip"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product_details">
+                                                        <h5><a href="">Xbox Wireless Game Controller Pink</a></h5>
+                                                        <div class="stars">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <span>review (1)</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <b>$120</b>
+                                                        </div>
+                                                        <div class="buttons">
+                                                            <button class="btn btn-warning">Add to cart</button>
+                                                            <button class="btn btn-outline-warning mt-2">Quick view</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6 p-0 product_item" data-aos="flip-left">
+                                                <div class="product">
+                                                    <div class="product_img">
+                                                        <a href="#"><img src="assets/img/product/tp-4.jpg" alt="product_slider" class="p_img"></a>
+                                                        <div class="product_icon">
+                                                            <i data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="fa-solid fa-eye" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick Model" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-solid fa-cart-shopping" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="custom-tooltip"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product_details">
+                                                        <h5><a href="">Wireless Bluetooth Over-Ear Headphones</a></h5>
+                                                        <div class="stars">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <span>review (1)</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <b>$135</b>
+                                                        </div>
+                                                        <div class="buttons">
+                                                            <button class="btn btn-warning">Add to cart</button>
+                                                            <button class="btn btn-outline-warning mt-2">Quick view</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6 p-0 product_item" data-aos="flip-left">
+                                                <div class="product">
+                                                    <div class="product_img">
+                                                        <a href="#"><img src="assets/img/product/tp-5.jpg" alt="product_slider" class="p_img"></a>
+                                                        <div class="product_icon">
+                                                            <i data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="fa-solid fa-eye" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick Model" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-solid fa-cart-shopping" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="custom-tooltip"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product_details">
+                                                        <h5><a href="">Solo Wireless On-Ear Headphones</a></h5>
+                                                        <div class="stars">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <span>review (1)</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <b>$145</b>
+                                                        </div>
+                                                        <div class="buttons">
+                                                            <button class="btn btn-warning">Add to cart</button>
+                                                            <button class="btn btn-outline-warning mt-2">Quick view</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6 p-0 product_item" data-aos="flip-left">
+                                                <div class="product">
+                                                    <div class="product_img">
+                                                        <a href="#"><img src="assets/img/product/tp-6.jpg" alt="product_slider" class="p_img"></a>
+                                                        <div class="product_icon">
+                                                            <i data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="fa-solid fa-eye" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick Model" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-solid fa-cart-shopping" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="custom-tooltip"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product_details">
+                                                        <h5><a href="">Vifa Bluetooth Portable Wireless Speaker</a></h5>
+                                                        <div class="stars">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <span>review (1)</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <b>90</b>
+                                                        </div>
+                                                        <div class="buttons">
+                                                            <button class="btn btn-warning">Add to cart</button>
+                                                            <button class="btn btn-outline-warning mt-2">Quick view</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6 p-0 product_item" data-aos="flip-left">
+                                                <div class="product">
+                                                    <div class="product_img">
+                                                        <a href="#"><img src="assets/img/product/tp-10.jpg" alt="product_slider" class="p_img"></a>
+                                                        <div class="product_icon">
+                                                            <i data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="fa-solid fa-eye" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick Model" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-solid fa-cart-shopping" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="custom-tooltip"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product_details">
+                                                        <h5><a href="">G951s Pink Stereo Gaming Headset</a></h5>
+                                                        <div class="stars">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <span>review (1)</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <b>$130</b>
+                                                        </div>
+                                                        <div class="buttons">
+                                                            <button class="btn btn-warning">Add to cart</button>
+                                                            <button class="btn btn-outline-warning mt-2">Quick view</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6 p-0 product_item"data-aos="flip-left">
+                                                <div class="product">
+                                                    <div class="product_img">
+                                                        <a href="#"><img src="assets/img/product/tp-9.jpg" alt="product_slider" class="p_img"></a>
+                                                        <div class="product_icon">
+                                                            <i data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="fa-solid fa-eye" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick Model" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-solid fa-cart-shopping" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="custom-tooltip"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product_details">
+                                                        <h5><a href="">Apple iPhone 11 Pro Max 64GB Gold</a></h5>
+                                                        <div class="stars">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <span>review (1)</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <b>$210</b>
+                                                        </div>
+                                                        <div class="buttons">
+                                                            <button class="btn btn-warning">Add to cart</button>
+                                                            <button class="btn btn-outline-warning mt-2">Quick view</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6 p-0 product_item" data-aos="flip-left">
+                                                <div class="product">
+                                                    <div class="product_img">
+                                                        <a href="#"><img src="assets/img/product/tp-20.jpg" alt="product_slider" class="p_img"></a>
+                                                        <div class="product_icon">
+                                                            <i data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="fa-solid fa-eye" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick Model" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-solid fa-cart-shopping" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="custom-tooltip"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product_details">
+                                                        <h5><a href="">Casentino Bucket Hat Luxury Goods - Imported</a></h5>
+                                                        <div class="stars">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <span>review (1)</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <b>$40</b>
+                                                        </div>
+                                                        <div class="buttons">
+                                                            <button class="btn btn-warning">Add to cart</button>
+                                                            <button class="btn btn-outline-warning mt-2">Quick view</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6 p-0 product_item" data-aos="flip-left">
+                                                <div class="product">
+                                                    <div class="product_img">
+                                                        <a href="#"><img src="assets/img/product/tp-12.jpg" alt="product_slider" class="p_img"></a>
+                                                        <div class="product_icon">
+                                                            <i data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="fa-solid fa-eye" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick Model" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-solid fa-cart-shopping" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="custom-tooltip"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product_details">
+                                                        <h5><a href="">Classic Leather Backpack Day pack 2023</a></h5>
+                                                        <div class="stars">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <span>review (1)</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <b>$80</b>
+                                                        </div>
+                                                        <div class="buttons">
+                                                            <button class="btn btn-warning">Add to cart</button>
+                                                            <button class="btn btn-outline-warning mt-2">Quick view</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6 p-0 product_item" data-aos="flip-left">
+                                                <div class="product">
+                                                    <div class="product_img">
+                                                        <a href="#"><img src="assets/img/product/tp-13.jpg" alt="product_slider" class="p_img"></a>
+                                                        <div class="product_icon">
+                                                            <i data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="fa-solid fa-eye" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick Model" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-solid fa-cart-shopping" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="custom-tooltip"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product_details">
+                                                        <h5><a href="">Coffee Maker AH240a Full Function</a></h5>
+                                                        <div class="stars">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <span>review (1)</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <b>$120</b>
+                                                        </div>
+                                                        <div class="buttons">
+                                                            <button class="btn btn-warning">Add to cart</button>
+                                                            <button class="btn btn-outline-warning mt-2">Quick view</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6 p-0 product_item" data-aos="flip-left">
+                                                <div class="product">
+                                                    <div class="product_img">
+                                                        <a href="#"><img src="assets/img/product/tp-14.jpg" alt="product_slider" class="p_img"></a>
+                                                        <div class="product_icon">
+                                                            <i data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="fa-solid fa-eye" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick Model" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-solid fa-cart-shopping" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="custom-tooltip"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product_details">
+                                                        <h5><a href="">Imported Wooden Felt Cushion Chair</a></h5>
+                                                        <div class="stars">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <span>review (1)</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <b>$86</b>
+                                                        </div>
+                                                        <div class="buttons">
+                                                            <button class="btn btn-warning">Add to cart</button>
+                                                            <button class="btn btn-outline-warning mt-2">Quick view</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6 p-0 product_item" data-aos="flip-left">
+                                                <div class="product">
+                                                    <div class="product_img">
+                                                        <a href="#"><img src="assets/img/product/tp-16.jpg" alt="product_slider" class="p_img"></a>
+                                                        <div class="product_icon">
+                                                            <i data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="fa-solid fa-eye" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick Model" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-solid fa-cart-shopping" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="custom-tooltip"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product_details">
+                                                        <h5><a href="">Korea Stainless Steel Pot Set 5 Piece</a></h5>
+                                                        <div class="stars">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <span>review (1)</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <b>$115</b>
+                                                        </div>
+                                                        <div class="buttons">
+                                                            <button class="btn btn-warning">Add to cart</button>
+                                                            <button class="btn btn-outline-warning mt-2">Quick view</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6 p-0 product_item" data-aos="flip-left">
+                                                <div class="product">
+                                                    <div class="product_img">
+                                                        <a href="#"><img src="assets/img/product/tp-17.jpg" alt="product_slider" class="p_img"></a>
+                                                        <div class="product_icon">
+                                                            <i data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="fa-solid fa-eye" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick Model" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-solid fa-cart-shopping" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="custom-tooltip"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product_details">
+                                                        <h5><a href="">HP Stainless Steel Hot Water Bottle</a></h5>
+                                                        <div class="stars">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <span>review (1)</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <b>$100</b>
+                                                        </div>
+                                                        <div class="buttons">
+                                                            <button class="btn btn-warning">Add to cart</button>
+                                                            <button class="btn btn-outline-warning mt-2">Quick view</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6 p-0 product_item" data-aos="flip-left">
+                                                <div class="product">
+                                                    <div class="product_img">
+                                                        <a href="#"><img src="assets/img/product/tp-22.jpg" alt="product_slider" class="p_img"></a>
+                                                        <div class="product_icon">
+                                                            <i data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="fa-solid fa-eye" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick Model" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-solid fa-cart-shopping" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="custom-tooltip"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product_details">
+                                                        <h5><a href="">Diesel J Ross Rev Revers Bomber Jacket</a></h5>
+                                                        <div class="stars">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <span>review (1)</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <b>$160</b>
+                                                        </div>
+                                                        <div class="buttons">
+                                                            <button class="btn btn-warning">Add to cart</button>
+                                                            <button class="btn btn-outline-warning mt-2">Quick view</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6 p-0 product_item" data-aos="flip-left">
+                                                <div class="product">
+                                                    <div class="product_img">
+                                                        <a href="#"><img src="assets/img/product/tp-23.jpg" alt="product_slider" class="p_img"></a>
+                                                        <div class="product_icon">
+                                                            <i data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="fa-solid fa-eye" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick Model" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-solid fa-cart-shopping" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="custom-tooltip"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product_details">
+                                                        <h5><a href="">HOT “Spring Icons” Collaboration Jackets</a></h5>
+                                                        <div class="stars">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <span>review (1)</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <b>$145</b>
+                                                        </div>
+                                                        <div class="buttons">
+                                                            <button class="btn btn-warning">Add to cart</button>
+                                                            <button class="btn btn-outline-warning mt-2">Quick view</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6 p-0 product_item" data-aos="flip-left">
+                                                <div class="product">
+                                                    <div class="product_img">
+                                                        <a href="#"><img src="assets/img/product/tp-24.jpg" alt="product_slider" class="p_img"></a>
+                                                        <div class="product_icon">
+                                                            <i data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="fa-solid fa-eye" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick Model" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-solid fa-cart-shopping" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="custom-tooltip"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product_details">
+                                                        <h5><a href="">Taffy Candy laffy Bites Net 4.2 oz</a></h5>
+                                                        <div class="stars">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <span>review (1)</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <b>$35</b>
+                                                        </div>
+                                                        <div class="buttons">
+                                                            <button class="btn btn-warning">Add to cart</button>
+                                                            <button class="btn btn-outline-warning mt-2">Quick view</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-6 p-0 product_item" data-aos="flip-left">
+                                                <div class="product">
+                                                    <div class="product_img">
+                                                        <a href="#"><img src="assets/img/product/tp-26.jpg" alt="product_slider" class="p_img"></a>
+                                                        <div class="product_icon">
+                                                            <i data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="fa-solid fa-eye" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick Model" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="custom-tooltip"></i>
+                                                            <i class="fa-solid fa-cart-shopping" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="custom-tooltip"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product_details">
+                                                        <h5><a href="">Vin Long Fresh Mangosteen 500g</a></h5>
+                                                        <div class="stars">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-regular fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <span>review (1)</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <b>$115</b>
+                                                        </div>
+                                                        <div class="buttons">
+                                                            <button class="btn btn-warning">Add to cart</button>
+                                                            <button class="btn btn-outline-warning mt-2">Quick view</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade list_items" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                        <div class="row product list_view mx-0 justify-content-lg-center">
+                                            <div class="col-lg-3">
+                                                <div class="product_img">
+                                                    <a href="#"><img src="assets/img/product/tp-7.jpg" alt="product_slider" class="p_img"></a>
+                                                    <div class="product_icon">
+                                                        <i data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="fa-solid fa-eye" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick Model" data-bs-custom-class="custom-tooltip"></i>
+                                                        <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="custom-tooltip"></i>
+                                                        <i class="fa-solid fa-cart-shopping" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="custom-tooltip"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="product_details">
+                                                    <h5><a href="">OPPO R11s 64GB Dual 20MP Cameras</a></h5>
+                                                    <div class="stars">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <span>review (1)</span>
+                                                    </div>
+                                                    <ul class="specification">
+                                                        <li><i class="fa-solid fa-circle"></i> <span>Bass and Stereo Sound.</span></li>
+                                                        <li><i class="fa-solid fa-circle"></i> <span>Display with 3088 x 1440 pixels resolution.</span></li>
+                                                        <li><i class="fa-solid fa-circle"></i> <span>Memory, Storage &amp; SIM: 12GB RAM, 256GB.</span></li>
+                                                        <li><i class="fa-solid fa-circle"></i> <span>android v10.0 Operating system.</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <p>availability: <b class="price">940</b> in stock</p>
+                                                <div class="price">
+                                                    <b>$150</b>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-warning">Add to cart</button>
+                                                    <button class="btn btn-outline-warning mt-2">Quick view</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row product list_view mx-0 justify-content-lg-center">
+                                            <div class="col-lg-3">
+                                                <div class="product_img">
+                                                    <a href="#"><img src="assets/img/product/tp-4.jpg" alt="product_slider" class="p_img"></a>
+                                                    <div class="product_icon">
+                                                        <i data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="fa-solid fa-eye" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick Model" data-bs-custom-class="custom-tooltip"></i>
+                                                        <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="custom-tooltip"></i>
+                                                        <i class="fa-solid fa-cart-shopping" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="custom-tooltip"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="product_details">
+                                                    <h5><a href="">Wireless Bluetooth Over-Ear Headphones</a></h5>
+                                                    <div class="stars">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <span>review (1)</span>
+                                                    </div>
+                                                    <ul class="specification">
+                                                        <li><i class="fa-solid fa-circle"></i> <span>Bass and Stereo Sound.</span></li>
+                                                        <li><i class="fa-solid fa-circle"></i> <span>Display with 3088 x 1440 pixels resolution.</span></li>
+                                                        <li><i class="fa-solid fa-circle"></i> <span>Memory, Storage &amp; SIM: 12GB RAM, 256GB.</span></li>
+                                                        <li><i class="fa-solid fa-circle"></i> <span>android v10.0 Operating system.</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <p>availability: <b class="price">940</b> in stock</p>
+                                                <div class="price">
+                                                    <b>$150</b>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-warning">Add to cart</button>
+                                                    <button class="btn btn-outline-warning mt-2">Quick view</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row product list_view mx-0 justify-content-lg-center">
+                                            <div class="col-lg-3">
+                                                <div class="product_img">
+                                                    <a href="#"><img src="assets/img/product/tp-9.jpg" alt="product_slider" class="p_img"></a>
+                                                    <div class="product_icon">
+                                                        <i data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="fa-solid fa-eye" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick Model" data-bs-custom-class="custom-tooltip"></i>
+                                                        <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="custom-tooltip"></i>
+                                                        <i class="fa-solid fa-cart-shopping" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="custom-tooltip"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="product_details">
+                                                    <h5><a href="">Apple IPhone 11 Pro Max 64GB Gold</a></h5>
+                                                    <div class="stars">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <span>review (1)</span>
+                                                    </div>
+                                                    <ul class="specification">
+                                                        <li><i class="fa-solid fa-circle"></i> <span>Bass and Stereo Sound.</span></li>
+                                                        <li><i class="fa-solid fa-circle"></i> <span>Display with 3088 x 1440 pixels resolution.</span></li>
+                                                        <li><i class="fa-solid fa-circle"></i> <span>Memory, Storage &amp; SIM: 12GB RAM, 256GB.</span></li>
+                                                        <li><i class="fa-solid fa-circle"></i> <span>android v10.0 Operating system.</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <p>availability: <b class="price">940</b> in stock</p>
+                                                <div class="price">
+                                                    <b>$150</b>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-warning">Add to cart</button>
+                                                    <button class="btn btn-outline-warning mt-2">Quick view</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row product list_view mx-0 justify-content-lg-center">
+                                            <div class="col-lg-3">
+                                                <div class="product_img">
+                                                    <a href="#"><img src="assets/img/product/tp-10.jpg" alt="product_slider" class="p_img"></a>
+                                                    <div class="product_icon">
+                                                        <i data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="fa-solid fa-eye" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick Model" data-bs-custom-class="custom-tooltip"></i>
+                                                        <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="custom-tooltip"></i>
+                                                        <i class="fa-solid fa-cart-shopping" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="custom-tooltip"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="product_details">
+                                                    <h5><a href="">G951s Pink Stereo Gaming Headset</a></h5>
+                                                    <div class="stars">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <span>review (1)</span>
+                                                    </div>
+                                                    <ul class="specification">
+                                                        <li><i class="fa-solid fa-circle"></i> <span>Bass and Stereo Sound.</span></li>
+                                                        <li><i class="fa-solid fa-circle"></i> <span>Display with 3088 x 1440 pixels resolution.</span></li>
+                                                        <li><i class="fa-solid fa-circle"></i> <span>Memory, Storage &amp; SIM: 12GB RAM, 256GB.</span></li>
+                                                        <li><i class="fa-solid fa-circle"></i> <span>android v10.0 Operating system.</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <p>availability: <b class="price">940</b> in stock</p>
+                                                <div class="price">
+                                                    <b>$150</b>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-warning">Add to cart</button>
+                                                    <button class="btn btn-outline-warning mt-2">Quick view</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row product list_view mx-0 justify-content-lg-center">
+                                            <div class="col-lg-3">
+                                                <div class="product_img">
+                                                    <a href="#"><img src="assets/img/product/tp-3.jpg" alt="product_slider" class="p_img"></a>
+                                                    <div class="product_icon">
+                                                        <i data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="fa-solid fa-eye" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick Model" data-bs-custom-class="custom-tooltip"></i>
+                                                        <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="custom-tooltip"></i>
+                                                        <i class="fa-solid fa-cart-shopping" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="custom-tooltip"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="product_details">
+                                                    <h5><a href="">Xbox Wireless Game Controller Pink</a></h5>
+                                                    <div class="stars">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <span>review (1)</span>
+                                                    </div>
+                                                    <ul class="specification">
+                                                        <li><i class="fa-solid fa-circle"></i> <span>Bass and Stereo Sound.</span></li>
+                                                        <li><i class="fa-solid fa-circle"></i> <span>Display with 3088 x 1440 pixels resolution.</span></li>
+                                                        <li><i class="fa-solid fa-circle"></i> <span>Memory, Storage &amp; SIM: 12GB RAM, 256GB.</span></li>
+                                                        <li><i class="fa-solid fa-circle"></i> <span>android v10.0 Operating system.</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <p>availability: <b class="price">940</b> in stock</p>
+                                                <div class="price">
+                                                    <b>$150</b>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-warning">Add to cart</button>
+                                                    <button class="btn btn-outline-warning mt-2">Quick view</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row product list_view mx-0 justify-content-lg-center">
+                                            <div class="col-lg-3">
+                                                <div class="product_img">
+                                                    <a href="#"><img src="assets/img/product/tp-5.jpg" alt="product_slider" class="p_img"></a>
+                                                    <div class="product_icon">
+                                                        <i data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="fa-solid fa-eye" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick Model" data-bs-custom-class="custom-tooltip"></i>
+                                                        <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="custom-tooltip"></i>
+                                                        <i class="fa-solid fa-cart-shopping" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="custom-tooltip"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="product_details">
+                                                    <h5><a href="">Solo Wireless On-Ear Headphones</a></h5>
+                                                    <div class="stars">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <span>review (1)</span>
+                                                    </div>
+                                                    <ul class="specification">
+                                                        <li><i class="fa-solid fa-circle"></i> <span>Bass and Stereo Sound.</span></li>
+                                                        <li><i class="fa-solid fa-circle"></i> <span>Display with 3088 x 1440 pixels resolution.</span></li>
+                                                        <li><i class="fa-solid fa-circle"></i> <span>Memory, Storage &amp; SIM: 12GB RAM, 256GB.</span></li>
+                                                        <li><i class="fa-solid fa-circle"></i> <span>android v10.0 Operating system.</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <p>availability: <b class="price">940</b> in stock</p>
+                                                <div class="price">
+                                                    <b>$150</b>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-warning">Add to cart</button>
+                                                    <button class="btn btn-outline-warning mt-2">Quick view</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row product list_view mx-0 justify-content-lg-center">
+                                            <div class="col-lg-3">
+                                                <div class="product_img">
+                                                    <a href="#"><img src="assets/img/product/tp-6.jpg" alt="product_slider" class="p_img"></a>
+                                                    <div class="product_icon">
+                                                        <i data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="fa-solid fa-eye" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick Model" data-bs-custom-class="custom-tooltip"></i>
+                                                        <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="custom-tooltip"></i>
+                                                        <i class="fa-solid fa-cart-shopping" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="custom-tooltip"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="product_details">
+                                                    <h5><a href="">Vifa Bluetooth Portable Wireless Speaker</a></h5>
+                                                    <div class="stars">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <span>review (1)</span>
+                                                    </div>
+                                                    <ul class="specification">
+                                                        <li><i class="fa-solid fa-circle"></i> <span>Bass and Stereo Sound.</span></li>
+                                                        <li><i class="fa-solid fa-circle"></i> <span>Display with 3088 x 1440 pixels resolution.</span></li>
+                                                        <li><i class="fa-solid fa-circle"></i> <span>Memory, Storage &amp; SIM: 12GB RAM, 256GB.</span></li>
+                                                        <li><i class="fa-solid fa-circle"></i> <span>android v10.0 Operating system.</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <p>availability: <b class="price">940</b> in stock</p>
+                                                <div class="price">
+                                                    <b>$150</b>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-warning">Add to cart</button>
+                                                    <button class="btn btn-outline-warning mt-2">Quick view</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row product list_view mx-0 justify-content-lg-center">
+                                            <div class="col-lg-3">
+                                                <div class="product_img">
+                                                    <a href="#"><img src="assets/img/product/tp-13.jpg" alt="product_slider" class="p_img"></a>
+                                                    <div class="product_icon">
+                                                        <i data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="fa-solid fa-eye" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick Model" data-bs-custom-class="custom-tooltip"></i>
+                                                        <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="custom-tooltip"></i>
+                                                        <i class="fa-solid fa-cart-shopping" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="custom-tooltip"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="product_details">
+                                                    <h5><a href="">Coffee Maker AH240a Full Function</a></h5>
+                                                    <div class="stars">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <span>review (1)</span>
+                                                    </div>
+                                                    <ul class="specification">
+                                                        <li><i class="fa-solid fa-circle"></i> <span>Bass and Stereo Sound.</span></li>
+                                                        <li><i class="fa-solid fa-circle"></i> <span>Display with 3088 x 1440 pixels resolution.</span></li>
+                                                        <li><i class="fa-solid fa-circle"></i> <span>Memory, Storage &amp; SIM: 12GB RAM, 256GB.</span></li>
+                                                        <li><i class="fa-solid fa-circle"></i> <span>android v10.0 Operating system.</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <p>availability: <b class="price">940</b> in stock</p>
+                                                <div class="price">
+                                                    <b>$150</b>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-warning">Add to cart</button>
+                                                    <button class="btn btn-outline-warning mt-2">Quick view</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row product list_view mx-0 justify-content-lg-center">
+                                            <div class="col-lg-3">
+                                                <div class="product_img">
+                                                    <a href="#"><img src="assets/img/product/tp-20.jpg" alt="product_slider" class="p_img"></a>
+                                                    <div class="product_icon">
+                                                        <i data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="fa-solid fa-eye" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick Model" data-bs-custom-class="custom-tooltip"></i>
+                                                        <i class="fa-regular fa-heart" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="custom-tooltip"></i>
+                                                        <i class="fa-solid fa-cart-shopping" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="custom-tooltip"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="product_details">
+                                                    <h5><a href="">Casentino Bucket Hat Luxury Goods - Imported</a></h5>
+                                                    <div class="stars">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <span>review (1)</span>
+                                                    </div>
+                                                    <ul class="specification">
+                                                        <li><i class="fa-solid fa-circle"></i> <span>Bass and Stereo Sound.</span></li>
+                                                        <li><i class="fa-solid fa-circle"></i> <span>Display with 3088 x 1440 pixels resolution.</span></li>
+                                                        <li><i class="fa-solid fa-circle"></i> <span>Memory, Storage &amp; SIM: 12GB RAM, 256GB.</span></li>
+                                                        <li><i class="fa-solid fa-circle"></i> <span>android v10.0 Operating system.</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <p>availability: <b class="price">940</b> in stock</p>
+                                                <div class="price">
+                                                    <b>$150</b>
+                                                </div>
+                                                <div class="buttons">
+                                                    <button class="btn btn-warning">Add to cart</button>
+                                                    <button class="btn btn-outline-warning mt-2">Quick view</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-5">
+                        <div class="col-auto">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">&laquo;</a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item" aria-current="page">
+                                    <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                    <a class="page-link" href="#">&raquo;</a>
+                                    </li>
+                                </ul>
+                              </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+     <!------------- footer Section --------------->
+     <footer class="footer_section section mb-0">
+        <div class="ft_1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 text-md-start text-center">
+                        <h3>follow us</h3>
+                        <p>We make consolidating, marketing and tracking your social media website easy.</p>
+                        <div class="social_links">
+                            <a href="#" class="social_icon facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="social_icon twitter"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="social_icon yt"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#" class="social_icon linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="social_icon rss"><i class="fa-solid fa-rss"></i></a>
+                            <a href="#" class="social_icon dribble"><i class="fa-brands fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 text-md-start text-center">
+                        <h3>Sign Up To Newsletter</h3>
+                        <p>Join 60.000+ subscribers and get a new discount coupon on every Saturday.</p>
+                        <form action="#">
+                            <div class="btn-group subscribe_area">
+                                <input type="email" name="subscriber" id="subscribe" placeholder="Enter your Email..." class="form-control p-3 subscribe_box">
+                                <button class="btn btn-warning subscribe_btn">subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-4 col-12 text-lg-start text-center mt-md-0 mt-4">
+                        <h3>Download App</h3>
+                        <p>DukaMarket App is now available on App Store & Google Play. Get it now.</p>
+                        <div class="row subscribe_area justify-content-center">
+                            <div class="col-auto mb-3">
+                                <a href="#"><img src="assets/img/brand/app_ios.png" alt="ios"></a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="#"><img src="assets/img/brand/app_android.png" alt="android"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------- footer 2nd Section --------------->
+        <div class="ft_section">
+            <div class="container ft_area">
+                <div class="row">
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-12 ft_links">
+                        <h3>Custom care</h3>
+                        <ul class="ps-md-0 ps-5">
+                            <li><a href="login-register.html">New Customers</a></li>
+                            <li><a href="about.html">How to use Account</a></li>
+                            <li><a href="checkout.html">Placing an Order</a></li>
+                            <li><a href="checkout.html">Payment Methods</a></li>
+                            <li><a href="cart.html">Delivery &amp; Dispatch</a></li>
+                            <li><a href="about.html">Problems with Order</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-12 ft_links">
+                        <h3>Custom service</h3>
+                        <ul>
+                            <li><a href="about.html">Help Center</a></li>
+                            <li><a href="about.html">Contact Us</a></li>
+                            <li><a href="about.html">Report Abuse</a></li>
+                            <li><a href="about.html">Submit a Dispute</a></li>
+                            <li><a href="about.html">Policies &amp; Rules</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-12 ft_links">
+                        <h3>my account</h3>
+                        <ul class="ps-md-0 ps-5">
+                            <li><a href="faq.html">Product Support</a></li>
+                            <li><a href="checkout.html">Checkout</a></li>
+                            <li><a href="cart.html">Shopping Cart</a></li>
+                            <li><a href="wishlist.html">Wishlist</a></li>
+                            <li><a href="faq.html">Terms & Conditions</a></li>
+                            <li><a href="faq.html">Redeem Voucher</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-12 ft_links">
+                        <h3>quick links</h3>
+                        <ul>
+                            <li><a href="about.html">Store Location</a></li>
+                            <li><a href="login-register.html">My account</a></li>
+                            <li><a href="about.html">Order Tracking</a></li>
+                            <li><a href="faq.html">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-12 mt-lg-0 mt-4 text-lg-start text-center">
+                        <h3>about the store</h3>
+                        <p>Our mission statement is to provide the absolute best customer experience available in the Electronic industry without exception.</p>
+                        <div class="ft_contact justify-content-center justify-content-lg-start">
+                            <span><i class="fa-solid fa-headset"></i></span>
+                            <div class="ms-4">
+                                <p class="ft_text">Got Question? Call us 24/7!</p>
+                                <span class="ft_no">(+100) 123 456 7890</span>
+                            </div>
+                        </div>
+                        <p>Add: Walls Street 68, Mahattan, New York, USA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!------------- Mobile Navbar --------------->
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <div class="site_logo">
+                <img src="assets/img/logo/logo-white.png" alt="site_logo" class="img-fluid">
+              </div>
+          <button type="button" class="btn-close fw-bold text-warning" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <form class="search_box form-control" role="search">
+                <input class="search_input" type="search" placeholder="Search" aria-label="Search">
+                <button class="search_btn" type="submit"><i class="icon fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <nav>
+                <ul class="accordion" id="accordion_main">
+                    <li class="fs-4 mt-5 ms-3 mb-1"><a class="nav-link" href="index.html"><i class="fa-solid fa-house me-2"></i>Home</a></li>
+
+                    <li class="accordion-button collapsed fs-4" data-bs-toggle="collapse" data-bs-target="#collapse_main_cat" aria-expanded="true" aria-controls="collapse_main_cat">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-store me-2"></i>shop by department</a>
+                    </li>
+
+                    <div id="collapse_main_cat" class="accordion-collapse collapse" aria-labelledby="heading_main_cat" data-bs-parent="#accordion_main">
+                        <ul class="accordion-body">
+                            <div class="accordion" id="accordion_sub">
+                                <li class="accordion-button fs-4 collapsed" data-bs-toggle="collapse" data-bs-target="#collapse_sub_menu1" aria-expanded="true" aria-controls="collapse_sub_menu1">
+                                    <a class="nav-link" href="shop.html">phone and electronic</a>
+                                </li>
+
+                                <div id="collapse_sub_menu1" class="accordion-collapse collapse" aria-labelledby="heading_sub_menu1" data-bs-parent="#accordion_sub">
+                                    <ul class="accordion-body">
+                                        <li class="my-2"><a class="nav-link" href="shop.html">phone and electronics</a></li>
+                                        <li class="my-2"><a class="nav-link" href="shop.html">iphone</a></li>
+                                        <li class="my-2"><a class="nav-link" href="shop.html">android</a></li>
+                                        <li class="my-2"><a class="nav-link" href="shop.html">tablets</a></li>
+                                        <li class="my-2"><a class="nav-link" href="shop.html">smart watches</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <li class="accordion-button fs-4 collapsed" data-bs-toggle="collapse" data-bs-target="#collapse_sub_menu2" aria-expanded="true" aria-controls="collapse_sub_menu2">
+                                    <a class="nav-link" href="shop.html">best Seller products</a>
+                                </li>
+
+                                <div id="collapse_sub_menu2" class="accordion-collapse collapse" aria-labelledby="heading_sub_menu2" data-bs-parent="#accordion_sub">
+                                    <ul class="accordion-body">
+                                        <li class="my-2"><a class="nav-link" href="shop.html">ios watches</a></li>
+                                        <li class="my-2"><a class="nav-link" href="shop.html">android watches</a></li>
+                                        <li class="my-2"><a class="nav-link" href="shop.html">macbook pro</a></li>
+                                        <li class="my-2"><a class="nav-link" href="shop.html">Apple Imac</a></li>
+                                    </ul>
+                                </div>
+
+                                <li class="accordion-button fs-4 collapsed" data-bs-toggle="collapse" data-bs-target="#collapse_sub_menu3" aria-expanded="true" aria-controls="collapse_sub_menu3">
+                                    <a class="nav-link" href="#">new Arrivals</a>
+                                </li>
+
+                                <div id="collapse_sub_menu3" class="accordion-collapse collapse" aria-labelledby="heading_sub_menu3" data-bs-parent="#accordion_sub">
+                                    <ul class="accordion-body">
+                                        <li class="fs-4 my-2"><a class="nav-link" href="shop.html">home appliances</a></li>
+                                        <li class="fs-4 my-2"><a class="nav-link" href="shop.html">office equipment</a></li>
+                                        <li class="fs-4 my-2"><a class="nav-link" href="shop.html">technology</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <li class="my-2 ms-3"><a class="nav-link" href="shop.html">TV & audio</a></li>
+                            <li class="my-2 ms-3"><a class="nav-link" href="shop.html">electronics & digital</a></li>
+                            <li class="my-2 ms-3"><a class="nav-link" href="shop.html">Fashion & clothings</a></li>
+                            <li class="my-2 ms-3"><a class="nav-link" href="shop.html">jewelry & watches</a></li>
+                            <li class="my-2 ms-3"><a class="nav-link" href="shop.html">health & beauty</a></li>
+                        </ul>
+                    </div>
+
+                    <li class="accordion-button collapsed fs-4" data-bs-toggle="collapse" data-bs-target="#collapse_main_page" aria-expanded="true" aria-controls="collapse_main_page">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-file me-2"></i>pages</a>
+                    </li>
+
+                    <div id="collapse_main_page" class="accordion-collapse collapse" aria-labelledby="heading_main_page" data-bs-parent="#accordion_main">
+                        <ul class="accordion-body">
+                            <div class="accordion" id="accordion_sub_page">
+                                <li class="accordion-button fs-4 collapsed" data-bs-toggle="collapse" data-bs-target="#collapse_sub_page1" aria-expanded="true" aria-controls="collapse_sub_page1">
+                                    <a class="nav-link">Shop layout</a>
+                                </li>
+
+                                <div id="collapse_sub_page1" class="accordion-collapse collapse" aria-labelledby="heading_sub_page1" data-bs-parent="#accordion_sub_page">
+                                    <ul class="accordion-body">
+                                        <li class="my-2"><a class="nav-link" href="shop.html">list view</a></li>
+                                        <li class="my-2"><a class="nav-link" href="shop.html">small Products</a></li>
+                                        <li class="my-2"><a class="nav-link" href="shop.html">large products</a></li>
+                                        <li class="my-2"><a class="nav-link" href="shop.html">shop left sidebar</a></li>
+                                        <li class="my-2"><a class="nav-link" href="shop.html">shop right sidebar</a></li>
+                                        <li class="my-2"><a class="nav-link" href="shop.html">product details</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <li class="accordion-button fs-4 collapsed" data-bs-toggle="collapse" data-bs-target="#collapse_sub_page2" aria-expanded="true" aria-controls="collapse_sub_page2">
+                                    <a class="nav-link" href="#">products layout</a>
+                                </li>
+
+                                <div id="collapse_sub_page2" class="accordion-collapse collapse" aria-labelledby="heading_sub_page2" data-bs-parent="#accordion_sub_page">
+                                    <ul class="accordion-body">
+                                        <li class="my-2"><a class="nav-link" href="product-detail.html">description Sticky</a></li>
+                                        <li class="my-2"><a class="nav-link" href="product-detail.html">product carousel</a></li>
+                                        <li class="my-2"><a class="nav-link" href="product-detail.html">gallery Modern</a></li>
+                                        <li class="my-2"><a class="nav-link" href="product-detail.html">Thumbnail left</a></li>
+                                        <li class="my-2"><a class="nav-link" href="product-detail.html">Thumbnail right</a></li>
+                                        <li class="my-2"><a class="nav-link" href="product-detail.html">Thumbnail bottom</a></li>
+                                    </ul>
+                                </div>
+
+                                <li class="accordion-button fs-4 collapsed" data-bs-toggle="collapse" data-bs-target="#collapse_sub_page3" aria-expanded="true" aria-controls="collapse_sub_page3">
+                                    <a class="nav-link" href="#">Other pages</a>
+                                </li>
+
+                                <div id="collapse_sub_page3" class="accordion-collapse collapse" aria-labelledby="heading_sub_page3" data-bs-parent="#accordion_sub_page">
+                                    <ul class="accordion-body">
+                                        <li class="my-2"><a class="nav-link" href="faq.html">FAQs pages</a></li>
+                                        <li class="my-2"><a class="nav-link" href="cart.html">Cart</a></li>
+                                        <li class="my-2"><a class="nav-link" href="wishlist.html">Wishlist</a></li>
+                                        <li class="my-2"><a class="nav-link" href="checkout.html">Checkout</a></li>
+                                        <li class="my-2"><a class="nav-link" href="about.html">Contact Us</a></li>
+                                        <li class="my-2"><a class="nav-link" href="404.html">404 Error</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <!-- <li class="fs-4 my-2 ms-3"><a class="nav-link" href="#">TV & audio</a></li>
+                            <li class="fs-4 my-2 ms-3"><a class="nav-link" href="#">electronics & digital</a></li>
+                            <li class="fs-4 my-2 ms-3"><a class="nav-link" href="#">Fashion & clothings</a></li>
+                            <li class="fs-4 my-2 ms-3"><a class="nav-link" href="#">jewelry & watches</a></li>
+                            <li class="fs-4 my-2 ms-3"><a class="nav-link" href="#">health & beauty</a></li> -->
+                        </ul>
+                    </div>
+
+                    <li class="mb-4 ms-3  mt-2"><a class="nav-link" href="shop.html"><i class="fa-solid fa-shop me-2"></i>shop</a></li>
+                    <li class="mb-4 ms-3"><a class="nav-link" href="blog.html"><i class="fa-solid fa-blog me-2"></i>blog</a></li>
+                    <li class="mb-4 ms-3"><a class="nav-link" href="about.html"><i class="fa-regular fa-address-card me-2"></i>about us</a></li>
+                    <li class="mb-4 ms-3"><a class="nav-link" href="about.html"><i class="fa-solid fa-truck me-2"></i>Order tracking</a></li>
+                    <li class="mb-4 ms-3"><a class="nav-link" href="about.html"><i class="fa-solid fa-square-phone me-2"></i>contact us</a></li>
+                    <li class="mb-4 ms-3"><a class="nav-link" href="login-register.html"><i class="fa-solid fa-user me-1"></i> My Account</a></li>
+                    <li class="mb-4 ms-3"><a class="nav-link" href="wishlist.html"><i class="fa-solid fa-heart me-1"></i> My Wishlist</a></li>
+                </ul>
+            </nav>
+            <div class="mobile_footer">
+                <p class="fs-4">need help? <span>+001 123 456 789</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!--------------- Quick View Modal --------------->
+    <div class="modal fade" id="exampleModalCenter">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+            <div class="modal-body">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-12 col-7">
+                                <div class="big-images overflow-hidden text-center">
+                                    <a href="product-detail.html"><img src="assets/img/product/nav/product-nav-big-1.jpg" alt="mobile" class="img-fluid bg_img"></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-5 text-center sm_images">
+                                <img src="assets/img/product/nav/product-nav-big-2.jpg" alt="mobile" class="img-fluid product_detail_img">
+                                <img src="assets/img/product/nav/product-nav-big-3.jpg" alt="mobile" class="img-fluid product_detail_img">
+                                <img src="assets/img/product/nav/product-nav-big-1.jpg" alt="mobile" class="img-fluid product_detail_img">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-6 f_details text-lg-start text-center">
+                        <h4><a href="product-detail.html" class="fs-2 fw-bold">IPhone 7 plus 64GB red</a></h4>
+                        <div class="stars my-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>review 1</span>
+                        </div>
+                        <div class="price mb-4">
+                            <span>$307.00</span>
+                            <del>$110</del>
+                        </div>
+                        <ul class="specification mb-lg-5 mb-3">
+                            <li><i class="fa-solid fa-circle"></i> <span>Bass and Stereo Sound.</span></li>
+                            <li><i class="fa-solid fa-circle"></i> <span>Display with 3088 x 1440 pixels resolution.</span></li>
+                            <li><i class="fa-solid fa-circle"></i> <span>Memory, Storage &amp; SIM: 12GB RAM, 256GB.</span></li>
+                            <li><i class="fa-solid fa-circle"></i> <span>android v10.0 Operating system.</span></li>
+                        </ul>
+                        <p>Availability: <span class="total_stock">120 In stock</span></p>
+                        <div class="row my-lg-5 my-3 justify-content-lg-start justify-content-center">
+                            <div class="col-sm-4 col-5 mb-3">
+                                <div class="quantity">
+                                    <i class="fa-solid fa-minus minus"></i>
+                                    <span class="piece">20</span>
+                                    <i class="fa-solid fa-plus plus"></i>
+                                </div>
+                            </div>
+                            <div class="col-sm-auto col-12">
+                                <button class="btn btn-warning px-4 py-2 fs-5 fw-bold">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="like_icon">
+                            <a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i> like</a>
+                            <a class="twitter" href="#"><i class="fa-brands fa-twitter"></i> tweet</a>
+                            <a class="pinterest" href="#"><i class="fa-brands fa-pinterest"></i> save</a>
+                            <a class="google" href="#"><i class="fa-brands fa-google-plus-g"></i>share</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha512-NqYds8su6jivy1/WLoW8x1tZMRD7/1ZfhWG/jcRQLOzV1k1rIODCpMgoBnar5QXshKJGV7vi0LXLNXPoFsM5Zg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="assets/animation/aos.js"></script>
+    <script src="assets/js/price_slider.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
