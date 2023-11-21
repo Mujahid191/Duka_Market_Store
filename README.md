@@ -1,7 +1,7 @@
 # Duka_Market_Store
 Welcome to the  Duka Market Store GitHub repository! This project is a fully functional e-commerce website for electronics enthusiasts and shoppers, built with HTML, CSS, JavaScript, Bootstrap, and jQuery.
 
-[Explore the Enchanting Duka Market](https://mujahid191.github.io/Duka_Market_Store/)
+[Demo Duka Market Store](https://mujahid191.github.io/Duka_Market_Store/)
 
 ![Screenshot 2023-11-21 at 11 40 51 AM](https://github.com/Mujahid191/Duka_Market_Store/assets/107375586/dafe391b-c086-429a-9655-57aeaf11041b)
 
